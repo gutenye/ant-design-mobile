@@ -57,6 +57,12 @@ module.exports = {
       module: require('../components/flex/demo/basic'), // 必须
     },
     {
+      title: 'Grid',
+      description: '九宫格',
+      icon: 'https://os.alipayobjects.com/rmsportal/QbGTlZewFSvHlSS.png',
+      module: require('../components/grid/demo/basic'),
+    },
+    {
       title: 'Popover', // 必须
       description: '浮动菜单',
       icon: 'https://os.alipayobjects.com/rmsportal/HhilRXHawmUwlML.png',

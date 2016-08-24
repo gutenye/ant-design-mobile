@@ -6,6 +6,7 @@ export { default as Card } from './components/card/';
 export { default as DatePicker } from './components/date-picker/';
 export { default as Drawer } from './components/drawer/';
 export { default as Flex } from './components/flex/';
+export { default as Grid } from './components/grid';
 export { default as Popover } from './components/popover/';
 export { default as ImagePicker } from './components/image-picker/';
 export { default as InputItem } from './components/input-item/';
