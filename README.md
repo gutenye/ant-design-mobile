@@ -7,6 +7,28 @@
 # Ant Design Mobile
 [![](https://img.shields.io/travis/ant-design/ant-design-mobile.svg?style=flat-square)](https://travis-ci.org/ant-design/ant-design-mobile) [![npm package](https://img.shields.io/npm/v/antd-mobile.svg?style=flat-square)](https://www.npmjs.org/package/antd-mobile) [![NPM downloads](http://img.shields.io/npm/dm/antd-mobile.svg?style=flat-square)](https://npmjs.org/package/antd-mobile) [![Dependency Status](https://david-dm.org/ant-design/ant-design-mobile.svg?style=flat-square)](https://david-dm.org/ant-design/ant-design-mobile) [![CDNJS](https://img.shields.io/cdnjs/v/antd-mobile.svg?style=flat-square)](https://cdnjs.com/libraries/antd-mobile)
 
+和官方版的变化
+
+- 取消 antd mobile 0.8 以上版本「高清」方案设置.
+
+使用方法
+
+```
+$ npm install @gutenye/antd-mobile
+
+# index.html
+
+  <html style="font-size: 16px;">
+
+# webpack.config.js
+
+  resolve: {
+    alias: {
+      'antd-mobile: '@gutenye/antd-mobile'
+    }
+  }
+```
+
 A configurable Mobile UI specification and React-based implementation.
 
 ## Features

@@ -1,0 +1,29 @@
+#!/usr/bin/env zsh
+
+# Update
+# yarn add antd-mobile
+# ./ake publish
+
+export PATH="node_modules/.bin:$PATH"
+
+fix() {
+  postcss -u postcss-pxtorem -c postcss.json -l -r node_modules/antd-mobile/**/*.css
+
+  cd node_modules/antd-mobile
+  sed -i 's/font-size: 50PX;//' lib/style/index.css
+  cd -
+}
+
+publish() {
+  fix
+
+  cd node_modules/antd-mobile/
+  sed -i 's/"name": "antd-mobile"/"name": "@gutenye\/antd-mobile"/' package.json
+  sed -i '"prepublish".*//' package.json
+  npm publish
+}
+
+case "$1" in
+  fix ) fix ;;
+  publish ) publish ;;
+esac

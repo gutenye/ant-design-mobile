@@ -1,0 +1,6 @@
+{
+  "postcss-pxtorem": {
+    "rootValue": 32,
+    "propWhiteList": []
+  }
+}
